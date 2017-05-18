@@ -1,0 +1,108 @@
+body{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  font-family:"helvetica" sans-serif;
+}
+
+#container{
+  width:900px;
+  margin:auto;
+}
+
+#scherm{
+  width:100%;
+  height:350px;
+ 
+  
+  background-color:skyblue;
+  postition:relative;
+  overflow:hidden;
+}
+
+h1{
+  margin: auto;
+  font-size:40px;
+  color:white;
+  
+  
+}
+
+h1:hover{
+  transform-origin: right top;
+  transform: scale(2);
+  
+}
+
+img:nth-of-type(1){
+  
+  height:200px;
+  position:absolute;
+  top:250px;left:-285px;
+  
+}
+
+img:nth-of-type(2){
+  position:absolute;
+  height:250px;
+}
+img:nth-of-type(3){
+  position:absolute;
+  top:250px;right:600px;
+}
+
+img:nth-of-type(3):hover{
+  transition-property: all;
+ transition-property: transform;
+  transition-duration: 2s rotate(220deg)translate(120px, 220px);
+}
+
+
+#vloer{
+  height:20px;
+  background-color: green;
+  margin-bottom:20px;
+}
+
+button{
+  width:100px;height:100px;
+  border-radius:100%;
+  margin:20px;
+  
+}
+
+button:hover{
+  background-color:red;
+}
+
+.polonaise{
+  
+  animation:polonaise 15s linear;
+}
+
+@keyframes polonaise{
+  from{left:-285px;
+    
+  }
+  to{ left:285px;
+    
+  }
+}
+
+.zon{
+  animation:zon 15s linear;
+}
+
+@keyframes zon{
+  from{height:500px;}
+  to{height:250px;}
+}
+
+.nooNoo{
+  animation:nooNoo 15s linear;
+}
+
+@keyframes nooNoo{
+  from{top:250px;}
+  to{top:150px;}
+}
